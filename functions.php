@@ -80,7 +80,7 @@ add_action( 'widgets_init', 'sanctuary_widgets_init' );
  */
 function sanctuary_scripts() {
 	wp_enqueue_style( 'sanctuary-style', get_stylesheet_uri() );
-	wp_enqueue_script ('Arvo', 'http://fonts.googleapis.com/css?family=Arvo', false, false, false );
+	wp_enqueue_script ('Arvo', 'http://fonts.googleapis.com/css?family=Arvo:400,700', false, false, false );
 	wp_enqueue_script ('Open Sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700', false, false, false );
 	wp_enqueue_script ('Open Sans Condensed', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', false, false, false );
 
