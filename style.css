@@ -737,7 +737,7 @@ object {
 
 
 .site-footer h5 {
-	border: 1px solid blue;
+	border: 1px solid purple;
 	float: right;
 	margin-top: 45px;
 	margin-right: 15px;
@@ -754,6 +754,7 @@ object {
 .background {
 	background-image: url('images/homepage1.jpg');
 	background-repeat: no-repeat;
+
 
 }
 

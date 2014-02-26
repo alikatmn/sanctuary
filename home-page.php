@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 	
-		<!--<div>
+		<div>
         <h1><?php the_field('hero_image'); ?></h1>
         <img src="<?php the_field('hero_image'); ?>" alt="background image"/>
 
@@ -21,6 +21,6 @@
 
     <div>
         <?php the_field('subhead'); ?>
-    </div>-->
+    </div>
 
 <?php get_footer(); ?>
