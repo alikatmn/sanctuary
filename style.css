@@ -745,7 +745,40 @@ object {
 	font-family: Open Sans, sans-serif;
 	font-size: 11px;
 
+}
 
+.homepage-section {
+	border: 1px solid green;
+	position: relative;
+
+}
+
+.homepage-section h1 {
+	color: #fff;
+	border: 1px solid red;
+	font-family: 'Arvo', serif;
+	font-size: 2rem;
+	position: absolute;
+	top: 585px;
+	left: 748px;
+	text-transform: uppercase;
+
+
+}
+
+.homepage-section h2 {
+	color: #fff;
+	font-family: 'Open Sans-Condensed', sans-serif;
+	position: absolute;
+	top: 785px;
+	left: 848px;
+
+}
+
+.homepage-background {
+	border: 1px solid red;
+	width: 100%;
+}
 
 
 
