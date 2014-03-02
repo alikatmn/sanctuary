@@ -5,22 +5,21 @@
 ?>
 
 
-<?php get_header(); ?>
-	
-		<div>
-        <h1><?php the_field('hero_image'); ?></h1>
-        <img src="<?php the_field('hero_image'); ?>" alt="background image"/>
-
-
-    </div>
-
-    <div>
-
-        <?php the_field('headline'); ?>
-    </div>
-
-    <div>
-        <?php the_field('subhead'); ?>
-    </div>
+<?php if( have_rows('homepage_sections') ): ?>
+ 
+     <?php while( have_rows('homepage_sections') ): the_row(); 
+ 
+        // vars
+        $backgroundimage = get_background_image('image');
+        $content = get_headline('text');
+        $link = get_subhead('text');
+ 
+        ?>
+ 
+    <?php endwhile; ?>
+ 
+    </ul>
+ 
+<?php endif; ?>
 
 <?php get_footer(); ?>
