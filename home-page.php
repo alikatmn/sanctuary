@@ -3,23 +3,30 @@
 * Template Name: Home Page
 */
 ?>
+<?php get_header(); ?>
 
+<?php if( have_rows('repeater') ): ?>
 
-<?php if( have_rows('homepage_sections') ): ?>
- 
-     <?php while( have_rows('homepage_sections') ): the_row(); 
+    <?php while( have_rows('repeater') ): the_row(); 
  
         // vars
-        $backgroundimage = get_background_image('image');
-        $content = get_headline('text');
-        $link = get_subhead('text');
+        $backgroundimage = get_sub_field('background_image');
+        $headline = get_sub_field('headline');
+        $subhead = get_sub_field('subhead');
  
         ?>
- 
+
+        <div class="homepage-section">
+            <h1 class="headline"><?php echo $headline; ?></h1>
+            <h2 class="subhead"><?php echo $subhead; ?></h2>
+            <img class="homepage-background" src="<?php echo $backgroundimage; ?>" >
+        </div>
+
     <?php endwhile; ?>
- 
-    </ul>
- 
+  
+  
 <?php endif; ?>
 
 <?php get_footer(); ?>
+
+
