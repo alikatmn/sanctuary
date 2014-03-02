@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="transbar">
+		<div class="ftransbar">
 				
 				<a href="#"><img src="http://localhost:8888/wp-content/themes/sanctuary/images/tumbler.png" alt="tumbler"></a>
 				<a href="#"><img src="http://localhost:8888/wp-content/themes/sanctuary/images/twitter.png" alt="twitter"></a>
