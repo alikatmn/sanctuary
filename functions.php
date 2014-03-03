@@ -94,6 +94,43 @@ function sanctuary_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'sanctuary_scripts' );
 
+add_action( 'init', 'create_my_post_types' );
+
+function create_my_post_types() {
+ register_post_type( 'cabins', 
+ array(
+      'labels' => array(
+      	'name' => __( 'cabins' ),
+      	'singular_name' => __( 'cabins' ),
+      	'add_new' => __( 'Add New' ),
+      	'add_new_item' => __( 'Add New cabins' ),
+      	'edit' => __( 'Edit' ),
+      	'edit_item' => __( 'Edit cabins' ),
+      	'new_item' => __( 'New cabins' ),
+      	'view' => __( 'View cabins' ),
+      	'view_item' => __( 'View cabins' ),
+      	'search_items' => __( 'Search cabins' ),
+      	'not_found' => __( 'No cabins found' ),
+      	'not_found_in_trash' => __( 'No cabins found in Trash' ),
+      	'parent' => __( 'Parent cabins' ),
+      ),
+ 'public' => true,
+      'menu_position' => 4,
+      'rewrite' => array('slug' => 'cabins'),
+      'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+      'taxonomies' => array('category', 'post_tag'),
+      'publicly_queryable' => true,
+      'show_ui' => true,
+      'query_var' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+     )
+  );
+}
+
+
+
+
 /**
  * Implement the Custom Header feature.
  */
@@ -118,3 +155,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
