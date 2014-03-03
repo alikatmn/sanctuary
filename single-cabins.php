@@ -5,29 +5,46 @@
 ?>
 <?php get_header(); ?>
 
-<h2>this is my cabin custom content</h2>
-
-<?php if( have_posts('cabins') ): ?>
-
-    <?php while( have_posts('cabins') ): the_post(); 
- 
-        // vars
-
-        $cabintitle = get_sub_field('cabin_title');
-        $cabindescription = get_sub_field('cabin_description');
-        $cabinsbackgroundimage = get_sub_field('cabins_background_image');
 
 
 
- 
-        ?>
+    <div class="cabins_background_image">
+        <img src="<?php the_field('cabins_background_image'); ?>" >
+    </div>
 
-        <div class="cabins">
-            <h1 class="cabintitle"><?php echo $cabintitle; ?></h1>
-            <h2 class="cabindescription"><?php echo $cabindescription; ?></h2>
-            <img class="cabins-background" src="<?php echo $cabinsbackgroundimage; ?>" >
+    <div class="container">
+
+        <div class="cabin-text">
+            <h2><?php the_field('cabin_title'); ?></h2>
+            <p><?php the_field('cabin_description'); ?></p>
+            <p><?php the_field('art_features'); ?></p>
+            <h3><?php the_field('price_no_meal'); ?></h3>
+            <p><?php the_field('price_with_meal'); ?></p>
+            <h4><?php the_field('check_availability'); ?></h4>
         </div>
 
-    <?php endwhile; ?>
+            <div class="cabin_photo">
+                <h2><?php the_field('cabin_photo'); ?></h2>
+            </div>
+
+
+            <div class="cabin_thumbs">
+                <img src="<?php the_field('cabin_thumbs'); ?>" >
+            </div>
+
+                <div class="photo_gallery">
+                    <?php 
+ 
+                    $image_ids = get_field('gallery', false, false);
+ 
+                    $shortcode = '
+ 
+                    [gallery ids="' . implode(',', $image_ids) . '"]';
+ 
+                    echo do_shortcode( $shortcode );
+ 
+                    ?>
+                </div>
+    </div>
 
 <?php get_footer(); ?>
