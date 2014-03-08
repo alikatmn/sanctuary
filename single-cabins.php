@@ -35,7 +35,7 @@
                 <div class="photo_gallery">
                     <?php 
  
-                    $image_ids = get_field('gallery', false, false);
+                    $image_ids = get_field('cabin_photo', false, false);
  
                     $shortcode = '
  
