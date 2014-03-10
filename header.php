@@ -26,7 +26,7 @@
 			
 		
 		<div class="headertop">
-			<div class="logo"><img src="http://localhost:8888/wp-content/themes/sanctuary/images/logo.png"></div>
+			<a href="http://localhost:8888"><div class="logo"><img src="http://localhost:8888/wp-content/themes/sanctuary/images/logo.png"></div></a>
 			
 			<div class="transbar">
 			<nav class="main-nav">
@@ -44,7 +44,7 @@
 						<a href="#"><li>valley drawing cabin</li>
 						</ul>
 					</li>-->
-					<a href="#"><li>Studio Cabins</li></a>
+					<a href="http://localhost:8888/cabins/orchard/"><li>Studio Cabins</li></a>
 					
 					<a href="#"><li>Apply</li></a>
 					<a href="#"><li>Meals</li></a>

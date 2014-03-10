@@ -658,7 +658,7 @@ object {
 
 .mainnav {
 	list-style: none;
-	border: 1px solid red;
+	/*border: 1px solid lime;*/
 	width: 650px;
 	float: right;
 	margin-top: 25px;
@@ -699,7 +699,7 @@ object {
 }*/
 
 .site-header {
-	border: 1px solid purple;
+	/*border: 1px solid lime;*/
 	z-index: 1;
 }
 
@@ -717,12 +717,12 @@ object {
 	height: 86px;
 	background-image: url('images/transbar.png');
 	background-repeat: repeat-x;
-	border: 1px solid blue;
+	/*border: 1px solid lime;*/
 
 }
 
 .logo {
-	border: 1px solid red;
+	/*border: 1px solid lime;*/
 	width: 500px;
 	float: left;
 	margin-left: 38px;
@@ -732,9 +732,10 @@ object {
 }
 
 .site-footer {
-	border: 1px solid red;
+	/*border: 1px solid lime;*/
 	z-index: 1;
 	margin-top: -88px;
+	clear: both;
 }
 
 .site-footer img {
@@ -816,6 +817,98 @@ object {
 
 }
 
+
+.cabins_background_image img {
+	width: 100%;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+}
+
+
+
+.cabincontainer {
+	/*border: 1px solid lime;*/
+	margin: 0;
+	width: 100%;
+	background-color: #fff;
+	height: 740px;
+	padding: 40px;
+	margin-bottom: 110px;
+
+
+
+
+}
+
+.cabin-text {
+	/*border: 1px solid lime;*/
+	width: 300px;
+	display: block;
+	float: left;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.cabin-text h2 {
+	font-family: 'Arvo', serif;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.cabin-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.cabin-text h3 {
+
+}
+
+
+.cabingallery {
+	/*border: 1px solid lime;*/
+	width: 500px;
+	margin-left: 30px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	margin-top: 30px;
+
+}
+
+.cabin-text a {
+	padding: 5px 15px; 
+	background:#56792f; 
+	border:0 none;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+   	text-decoration: none;
+   	font-size: 12px;
+    
+
+
+}
+
+.cabingallery ul {
+	list-style: none;
+	display:table-row;
+}
+
+
+.cabingallery li {
+	display: table-cell;
+    height: 100px;
+    list-style-type: none;
+    margin: 10px;
+    vertical-align: middle;
+        }
 
 
 

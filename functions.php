@@ -79,6 +79,12 @@ add_action( 'widgets_init', 'sanctuary_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sanctuary_scripts() {
+	wp_enqueue_script( 'jquery-1.11.0.min', get_template_directory_uri() . '/js/jquery-1.11.0.min.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider.js', array(jquery), '1.0.0', true );
+
+
 	wp_enqueue_style( 'sanctuary-style', get_stylesheet_uri() );
 	wp_enqueue_style('Arvo', 'http://fonts.googleapis.com/css?family=Arvo:400,700', false, false, false );
 	wp_enqueue_style('Open Sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700', false, false, false );
